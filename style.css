@@ -1,0 +1,47 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    max-width: 750px;
+    margin: 0 auto;
+    padding-top: 150px;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+form, table {
+    padding-bottom: 20px;
+    margin: 0 auto;
+    max-width: 540px;
+    width: 100%;
+    
+}
+
+#dd-contato {
+    width: 55px;
+}
+
+button {
+    background-color: aquamarine;
+    border: none;
+    padding: 10px;
+    color: #000;
+    border-radius: 10px;
+}
+
+input {
+    padding: 10px;
+}
+
+td {    
+    padding: 15px;
+    border-bottom: #958c8c solid 1px;
+    text-align: center;
+}
+
