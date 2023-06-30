@@ -1,16 +1,25 @@
 const form = document.getElementById('form');
+const nome = document.getElementById('nome-contato');
+const dd = document.getElementById('dd-contato');
+const telefone = document.getElementById('telefone-contato');
+
 let linhas = [];
 
 const cabecalho = document.querySelector('thead');
 cabecalho.innerHTML = `<tr><th>Não há contatos na agenda</th></td>`;
 
+dd.addEventListener('keyup', function(e){
+
+    dd.value = dd.value.replace(/\D/g, '');
+});
+
+telefone.addEventListener('keyup', function(e){
+
+    telefone.value = telefone.value.replace(/\D/g, '');
+});
 
 form.addEventListener('submit', function(e){
     e.preventDefault();
-
-    const nome = document.getElementById('nome-contato');
-    const dd = document.getElementById('dd-contato');
-    const telefone = document.getElementById('telefone-contato');
 
     let linha = `<tr>`;
     linha += `<td>${nome.value}</td>`;
